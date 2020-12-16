@@ -1,6 +1,7 @@
 import smtplib
 from tkinter import *
 import tkinter as tk
+from tkinter import messagebox
 
 window = Tk()
 window.title("Innova™")
@@ -13,14 +14,14 @@ result = tk.IntVar()
 def upload():
     DNI = dni.get()
     Result = result.get()
-    Email = Contact[DNI]
-    print(Result)
+    try:
+        Email = Contact[DNI]
+    except:
+        messagebox.showerror("Error", "Invalid DNI")
     if Result==1:
         x = 'El resultat de la seva prova PCR es positiu'
     if Result==0:
         x = 'El resultat de la seva prova PCR es negatiu'
-    print(Result)
-    print(x)
     gmail_user = 'innovapcr@gmail.com'
     gmail_password = 'Advanceduvic1?'
 
@@ -33,7 +34,7 @@ def upload():
     From: %s
     To: %s
     Subject: %s
-
+    
     %s
     """ % (sent_from, ", ".join(to), subject, body)
 
