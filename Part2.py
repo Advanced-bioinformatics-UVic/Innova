@@ -34,7 +34,7 @@ def upload():
     From: %s
     To: %s
     Subject: %s
-    
+
     %s
     """ % (sent_from, ", ".join(to), subject, body)
 
@@ -45,10 +45,8 @@ def upload():
         server.login(gmail_user, gmail_password)
         server.sendmail(sent_from, to, email_text)
         server.close()
-
-        print ('Email sent!')
     except:
-        print ('Something went wrong...')
+        messagebox.showerror("Error", "There was a problem sending your email")
     
 
     
