@@ -1,5 +1,6 @@
 from tkinter import *
 import tkinter as tk
+from tkinter import messagebox
 import csv
 
 window = Tk()
@@ -29,26 +30,29 @@ immunosuppressed = tk.IntVar()
 sickle_cell_disease = tk.IntVar()
 
 def upload():
-    Name = name.get()
-    Date = date.get()
-    Age = int(age.get())
-    DNI = dni.get()
-    Phone = phone.get()
-    Email = email.get()
-    BMI = int(bmi.get())
-    City = city.get()
-    Gender = gender.get()
-    Smoker = smoker.get()
-    Asthma = asthma.get()
-    Cancer = cancer.get()
-    Chronic_renal_disease = chronic_renal_disease.get()
-    Chronic_pulmonary_disease = chronic_pulmonary_disease.get()
-    Pregnant = pregnant.get()
-    Diabetes = diabetes.get()
-    Hypertension = hypertension.get()
-    Talassemia = talassemia.get()
-    Immunosuppressed = immunosuppressed.get()
-    Sickle_cell_disease = sickle_cell_disease.get()
+    try:
+        Name = name.get()
+        Date = date.get()
+        Age = int(age.get())
+        DNI = dni.get()
+        Phone = phone.get()
+        Email = email.get()
+        BMI = int(bmi.get())
+        City = city.get()
+        Gender = gender.get()
+        Smoker = smoker.get()
+        Asthma = asthma.get()
+        Cancer = cancer.get()
+        Chronic_renal_disease = chronic_renal_disease.get()
+        Chronic_pulmonary_disease = chronic_pulmonary_disease.get()
+        Pregnant = pregnant.get()
+        Diabetes = diabetes.get()
+        Hypertension = hypertension.get()
+        Talassemia = talassemia.get()
+        Immunosuppressed = immunosuppressed.get()
+        Sickle_cell_disease = sickle_cell_disease.get()
+    except:
+        messagebox.showerror("Error", "Wrong data in field")
     
     ValorAge = 0
     ValorBMI = 0
