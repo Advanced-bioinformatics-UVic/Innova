@@ -13,12 +13,15 @@ result = tk.IntVar()
 
 def upload():
     DNI = dni.get()
-    Result = result.get()  
-    Email = Contact[DNI]
+    Result = result.get()
+    try:
+        Email = Contact[DNI]
+    except:
+        messagebox.showerror("Error", "Invalid DNI")
     if Result==1:
-        x = 'You have tested positive for COVID-19.'
+        x = 'You have tested positive for COVID-19'
     if Result==0:
-        x = 'You have tested negative for COVID-19.'
+        x = 'You have tested negative for COVID-19'
     gmail_user = 'innovapcr@gmail.com'
     gmail_password = 'Advanceduvic1?'
 
@@ -36,12 +39,16 @@ def upload():
     """ % (sent_from, ", ".join(to), subject, body)
 
    
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.ehlo()
-    server.login(gmail_user, gmail_password)
-    server.sendmail(sent_from, to, email_text)
-    server.close()
+    try:
+        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+        server.ehlo()
+        server.login(gmail_user, gmail_password)
+        server.sendmail(sent_from, to, email_text)
+        server.close()
+    except:
+        messagebox.showerror("Error", "There was a problem sending your email")
     
+
     
 
 Label(window, text = "DNI", bg = "grey", fg = "white", font = "none 12 bold").grid(row = 1, column = 2)
@@ -89,4 +96,3 @@ lb.pack()
 
 window1.mainloop()
 window.mainloop()
-
