@@ -19,9 +19,9 @@ def upload():
     except:
         messagebox.showerror("Error", "Invalid DNI")
     if Result==1:
-        x = 'You have tested positive for COVID-19'
+        x = 'El resultat de la seva prova PCR es positiu'
     if Result==0:
-        x = 'You have tested negative for COVID-19'
+        x = 'El resultat de la seva prova PCR es negatiu'
     gmail_user = 'innovapcr@gmail.com'
     gmail_password = 'Advanceduvic1?'
 
@@ -47,8 +47,18 @@ def upload():
         server.close()
     except:
         messagebox.showerror("Error", "There was a problem sending your email")
-    
 
+    lines = []
+    with open('base.csv', 'r') as readFile:
+        reader = csv.reader(readFile)
+        for row in reader:
+            lines.append(row)
+            for field in row:
+                if field == DNI:
+                    lines.remove(row)
+    with open("base.csv", "w", newline = "") as base:
+        writer = csv.writer(base)
+        writer.writerows(lines)
     
 
 Label(window, text = "DNI", bg = "grey", fg = "white", font = "none 12 bold").grid(row = 1, column = 2)
