@@ -1,6 +1,6 @@
 # Waiting List Manager 1.0.0
 ---
-## Innova Biotechnology (Waste Management Association)
+## Innova™ Biotechnology (Waste Management™ Association)
 ---
 ## Guillem Vila Tubau, Joan Marc Navarro Catot & Jordi Vendrell Puigmitjà
 ---
