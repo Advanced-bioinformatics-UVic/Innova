@@ -1,4 +1,4 @@
-# Project Name
+# Waiting List Manager 1.0.0
 ---
 ## Innova Biotechnology (Waste Management Association)
 ---
