@@ -1,15 +1,15 @@
 # Project Name
 ---
-## Corporative name (Add a logo if you want)
+## Innova Biotechnology (Waste Management Association)
 ---
-## Authors 
+## Guillem Vila Tubau, Joan Marc Navarro Catot i Jordi Vendrell Puigmitjà
 ---
-## Description
+## Tool to manage the COVID-19 testing waiting lists
 ---
-- **What is your tool? (Name, use, examples,...)**
-- **Why you work on it? (Explain the problem that you solve with your tool)**
-- **How your tool could contribute with the research of COVID-19?** 
-- **Can you improve your tool in a future? How?**  
+- **Tool to manage PCR COVID-19 testing waiting lists by sorting the candidates through a priority score**
+- **The number of tests that can be carried out daily is limited and the number of people waiting to be tested grows with every wave, therefore a way to manage the waiting lists is needed**
+- **The tool could make the process of testing smoother and even save lives and limit the spread of the virus through detecting the worst cases with anticipation** 
+- **Improvements to the database and score system should be made in the future**  
 
 *Use follow-up presentations to write about the main idea of your project.*
 ## Frameworks 
