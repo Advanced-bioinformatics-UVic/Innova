@@ -16,4 +16,4 @@
 ---
 ## More info
 ---
-You can add github link or contact info.  
+https://github.com/Advanced-bioinformatics-UVic/Innova 
