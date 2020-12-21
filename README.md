@@ -2,7 +2,7 @@
 ---
 ## Innova Biotechnology (Waste Management Association)
 ---
-## Guillem Vila Tubau, Joan Marc Navarro Catot i Jordi Vendrell Puigmitjà
+## Guillem Vila Tubau, Joan Marc Navarro Catot & Jordi Vendrell Puigmitjà
 ---
 ## Tool to manage the COVID-19 testing waiting lists
 ---
