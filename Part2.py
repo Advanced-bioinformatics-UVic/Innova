@@ -72,7 +72,7 @@ tk.Radiobutton(window, text = "Negative", bg = "grey", padx = 20, variable = res
 
 Label(window, text = "", bg ="grey", fg = "white", font = "none 12 bold").grid(row = 7, column = 1)
 
-tk.Button(window, text = "Upload", fg = "White", bg = "dark green", height = 1, width = 10, command = upload).grid(row = 33, column = 2)
+tk.Button(window, text = "Send Result", fg = "White", bg = "dark green", height = 1, width = 10, command = upload).grid(row = 33, column = 2)
 
 from tkinter import *
 from tkinter.ttk import *
