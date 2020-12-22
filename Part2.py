@@ -30,15 +30,13 @@ def upload():
     subject = 'PCR '
     body = x
 
-    email_text = """\
+    email_text = """\n
     From: %s
     To: %s
     Subject: %s
-
     %s
     """ % (sent_from, ", ".join(to), subject, body)
 
-   
     try:
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.ehlo()
