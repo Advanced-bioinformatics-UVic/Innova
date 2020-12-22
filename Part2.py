@@ -19,9 +19,9 @@ def upload():
     except:
         messagebox.showerror("Error", "Invalid DNI")
     if Result==1:
-        x = 'El resultat de la seva prova PCR es positiu'
+        x = 'You have tested positive for COVID-19'
     if Result==0:
-        x = 'El resultat de la seva prova PCR es negatiu'
+        x = 'You have tested negative for COVID-19'
     gmail_user = 'innovapcr@gmail.com'
     gmail_password = 'Advanceduvic1?'
 
